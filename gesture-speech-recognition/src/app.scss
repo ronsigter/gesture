@@ -1,0 +1,83 @@
+.title {
+  grid-area: title;
+}
+
+.ble {
+  grid-area: ble;
+  width: 100%;
+  display: flex;
+
+  > .item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      height: 100%;
+    }
+
+  }
+}
+
+.tts {
+  grid-area: tts;
+  display: flex;
+  flex-direction: column;
+
+  textarea {
+    height: 100%;
+  }
+
+  > .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > .item.videos {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    overflow: auto;
+
+    > .video {
+      display: flex;
+      align-items: center;
+
+      > .title {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.spt {
+  grid-area: spt;
+}
+
+.graph {
+  grid-area: graph;
+  display: flex;
+  flex-wrap: wrap;
+
+  // .linegraph {
+  //   margin-bottom: 8px;
+  // }
+
+  .title {
+    width: 100%;
+    height: 16px;
+    text-align: center;
+  }
+}
+
+.container {
+  width: 100hv;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 10% 20% auto;
+  grid-template-areas: "title title"
+                       "ble ble"
+                       "tts graph";
+}
+

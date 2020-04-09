@@ -1,0 +1,15 @@
+Report
+
+1. Gathered data per letter (data inside datasets)
+2. Trained data for ML using KNN with K value of 5
+    a. Error Rate vs K value
+    b. Model Accuracy
+
+    * As K value increases, Accuracy decreases and Error Rate increases
+    * K value of 5 is taken
+
+Technical Report
+1. Gathered data using by feeding data from Gloves Device to PC
+2. A Python program was used to saved 50 sample data (Pinky, Ring, Middle, Index, Thumb) per letter
+3. Sign languages wihtout movements are save. Total of 23
+4. Machine learning using KNN algorithm is used to predict.
